@@ -4,6 +4,27 @@ import os
 from google import genai
 from google.genai import types
 
+
+
+
+import streamlit as st
+
+# CSS to hide branding and fix layout
+st.markdown("""
+    <style>
+    #MainMenu {visibility: hidden;}
+    header {visibility: hidden;}
+    footer {visibility: hidden;}
+    .stAppDeployButton {display:none;}
+    #viewerBadge {display: none;}
+    /* Bottom right corner adjustments */
+    .block-container {
+        padding-top: 2rem;
+        padding-bottom: 0rem;
+    }
+    </style>
+    """, unsafe_allow_html=True)
+
 # ==========================================
 # 1. Page Config (Professional Look)
 # ==========================================
