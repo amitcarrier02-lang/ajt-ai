@@ -30,7 +30,8 @@ st.divider()
 # ==========================================
 # 3. Data & API Setup (API Key Attached)
 # ==========================================
-GEMINI_API_KEY = "AIzaSyD21-1rckLu58Hn1sZuRCovNW_nuXJ7C30"
+# app.py ke andar key aise likhni hai (Taaki ye leak na ho)
+GEMINI_API_KEY = st.secrets["GEMINI_API_KEY"]
 
 # AI Instruction - Making it feel like a real person
 system_instruction = """
